@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add item</title>
+  <link rel="stylesheet" href="log.css" />
+</head>
+
+<body>
+  <h1 class="log_att">
+    ATten<span style="background-color: blue">dee</span>
+  <a href="/home"><button style="height: 2pc;width: 5pc;border-radius: 10px;background-color: rgb(101, 180, 255); position: relative;">Back</button></a>
+
+  </h1>
+
+
+  <h1 style="text-align: center">Update Attendance</h1>
+
+  <br />
+  <div class="login">
+    <form method="post" action="/addItem">
+      <label><b>Attendee Name </b> </label>
+      <input type="text" name="itemName" id="Uname" placeholder="Attendee name" required />
+      <br /><br /><br><br>
+      <label><b>Date/Time </b> </label>
+      <input type="datetime-local" name="dateTime" id="Pass" placeholder="Password" required />
+      <br /><br />
+      <br><br>
+      <input type="submit" id="log" value="Add" />
+    </form>
+  </div>
+
+  <!-- <h1><%= message %></h1>
+    <form action="/addItem" method="post">
+        <label for="itemName">Item name</label><br>
+        <input type="text" name="itemName" required >
+        <br><br>
+
+        <label for="itemQuantity">Quantity</label><br>
+        <input type="number" name="itemQuantity" required>
+        <br><br>
+
+        <label for="datetime" >Date/Time</label><br>
+        <input type="datetime-local" name="dateTime" required><br><br>
+
+        <input type="submit">
+    </form> -->
+</body>
+
+</html>

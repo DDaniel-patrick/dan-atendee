@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <h1 class="log_att">ATten<span style="background-color:blue;" >dee</span></h1><hr>
+    <!-- <a href="/register">Reguster</a> -->
+    <h2>LOGiN</h2>  
+    <div class="login">    
+    <form id="login" method="post" action="/login">    
+        <div id="not"><p><%= msg %></p></div>   
+        <br>
+        <label><b>UserName     
+        </b>    
+        </label>    
+        <input type="text" name="UserName" id="Uname" placeholder="Username" required> 
+        <br><br>
+        <br>
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="password" name="password" id="Pass" placeholder="Password" required>    
+        <br><br><br>
+        <input type="submit" id="log" value="Sign in">       
+        <br><br>    
+        <br>
+         <a href="/register" style="position:absolute; margin-left: 7pc;">Create Account</a> 
+         <br><br>
+          
+    </form>     
+</div>    
+<!-- 
+<h1>< msg %></h1>
+    <form action="/login" method="post">
+        <label for="UserName">UserName: </label> <br>
+        <input type="text" name="UserName">
+<br>
+<br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password"><br><br>
+
+        <input type="submit" >
+    </form>
+
+    <a href="/register">click to register</a> -->
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #ffffff; */
+ background-color: rgb(109, 176, 252);
+  font-family: "Arial";
+}
+.log_att{
+    padding-left: 5px;
+    margin: 10px;
+}
+.already{
+  margin-right: 30%;
+  font-size:15px;
+}
+.login {
+  height: 300px;
+  width: 350px;
+  /* overflow: hidden; */
+  margin: auto;
+  margin: 20 0 0 70%;
+  padding: 50px;
+  background: #08110f;
+  border-radius: 15px;
+}
+h2 {
+  text-align: center;
+  color: #134a53;
+  padding: 30px;
+}
+label {
+  color: #08ffd1;
+  font-size: 17px;
+}
+#Uname {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+#pass1{
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+#Pass {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+#log {
+  width: 30%;
+  height: 30px;
+  border: none;
+  border-radius: 12px;
+  /* padding-left: 7px; */
+  margin-left: 7pc;
+  color: rgb(34, 0, 185);
+  background-color: rgb(255, 255, 255);
+}
+#log:hover{
+  background-color: black;
+  color: white;
+}
+span {
+  color: white;
+  font-size: 17px;
+}
+a {
+  float: right;
+  background-color: grey;
+}
+#not {
+  color: red;
+}

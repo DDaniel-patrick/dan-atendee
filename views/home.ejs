@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href=" home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+
+<body>
+
+    <div class="upper">
+        <div class="sleep">
+            <h1 class="log_att">ATten<span style="background-color:blue;" >dee</span></h1>
+            <div class="leftpper">
+                <h1 style="text-transform:capitalize; text-decoration: underline;"> <%= name %> 
+                </h1>
+               <a href="/logout" style="background-color:red ; border-radius: 7px; height: 1.5pc; width: 5pc;" class="tag">logout</a>
+            </div>
+
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="circle">
+        <a href="/additem" class="zoo">Add Attendee</a>
+        <a href="/clear_history" class="zoo" id="clear" onclick="red()">Clear all</a>
+    </div>
+    </div>
+    <br>
+
+<script>
+    function red() {
+        
+        document.getElementById('clear')
+
+        var clear = confirm("Are you sure you want to clear all.")
+        if (clear==true){
+            alert("Attendance cleared.")
+        }
+        else{
+            document.getElementById('clear');
+        }
+    }
+</script>
+    <% if (items.length!=0) { %>
+        
+
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Name of attendee</td>
+                    
+                    <td>Date Added</td>
+                    <td>Delete Attendance</td>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <% for (let i=items.length-1; i>=0 ; i--) { %>
+
+                    <tr id="color">
+                            <td>
+                                <p style="text-decoration:solid; text-transform: capitalize;">
+                                    <b><%= items[i].itemName %></b>
+                                </p>
+                            </td>
+                            
+                            <td>
+                                <p>
+                                    <%= items[i].Date %>
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    <a href="/delete/<%= items[i]._id %>"><button style="background-color: red; height: 2pc; width: 5pc; border-radius: 5px; outline: none;"> delete</button></a>
+                                </p>
+                            </td>
+                        </tr>
+
+                    <% } %>
+            </tbody>
+        </table>
+
+        <% }else{ %>
+            <center>
+
+
+                <!-- <h1> -->
+                <a href="/addItem" class="ship">Add Attendee</a>
+                <!-- </h1> -->
+
+            </center>
+
+            <% } %>
+</body>
+
+</html>
